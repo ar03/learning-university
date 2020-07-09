@@ -10,6 +10,7 @@ function university_files() { //For loading CSS and JS
 add_action('wp_enqueue_scripts', 'university_files');
 
 function university_features() {
+  register_nav_menu('headerMenu','Header Menu'); //Adds menu to theme
   add_theme_support('title-tag'); //Dynamically generates titles for browser tab
 }
 
